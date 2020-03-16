@@ -13,6 +13,8 @@ app.set('json spaces', 2);
 app.get('/', (req, res) =>
   res.render('home', {}));
 
+app.get('/splitter', controller.splitter);
+
 app.listen(process.env.PORT, () => {
   console.log('Server init');
 });
